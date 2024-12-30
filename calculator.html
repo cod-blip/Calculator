@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .layerno1{
+            display: flex;
+            gap: 20px;
+        }
+        .layerno1 button{
+            padding: 10px 30px;
+        }
+        
+        .layerno2{
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+        }
+        .layerno2 button{
+            padding: 10px 30px;
+        }
+        
+        .layerno3{
+            display: flex;
+            gap: 20px;
+            margin: 10px 0;
+        }
+        .layerno3 button{
+            padding: 10px 30px;
+        }
+        .symbol{
+            display: flex;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+    </head>
+    <body>
+
+        <div class="layerno1">
+            <button id="btn1" type="button"
+                onclick="appendToDisplay('1')">1</button>
+            <button id="btn2" type="button"
+                onclick="appendToDisplay('2')">2</button>
+            <button id="btn3" type="button"
+                onclick="appendToDisplay('3')">3</button>
+        </div>
+
+        <div class="layerno2">
+            <button id="btn4" type="button"
+                onclick="appendToDisplay('4')">4</button>
+            <button id="btn5" type="button"
+                onclick="appendToDisplay('5')">5</button>
+            <button id="btn6" type="button"
+                onclick="appendToDisplay('6')">6</button>
+        </div>
+
+        <div class="layerno3">
+            <button id="btn7" type="button"
+                onclick="appendToDisplay('7')">7</button>
+            <button id="btn8" type="button"
+                onclick="appendToDisplay('8')">8</button>
+            <button id="btn9" type="button"
+                onclick="appendToDisplay('9')">9</button>
+        </div>
+
+        <div class="layerno3">
+            <button id="btn0" type="button"
+                onclick="appendToDisplay('0')">0</button>
+            <button id="btnp" type="button"
+                onclick="appendToDisplay('+')">+</button>
+            <button id="btns" type="button"
+                onclick="appendToDisplay('-')">-</button>
+            <button id="btnm" type="button"
+                onclick="appendToDisplay('*')">*</button>
+            <button id="btnd" type="button"
+                onclick="appendToDisplay('/')">/</button>
+            <button id="btne" type="button" onclick="calculate()">=</button>
+        </div>
+
+        <div class="solution">
+            <p id="answer"></p>
+        </div>
+
+        <script src="./calculator.js"></script>
+    </body>
+</html>
